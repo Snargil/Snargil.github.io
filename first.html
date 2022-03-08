@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hallo welt</title>
+
+    <style>
+        h1 { background-color: #ff0000; } /* all 'h1' tags */
+        h2 { background-color: #ffff00; border-top: 10pt; border-color: blue;}
+        h2 { color: magenta; }
+        .person { color: darkred; } /* class person */
+        .person {font-size: 300%;}
+        #copyright {font-size: 5px; } /* id copyright */
+        .space {vertical-align: ;}
+
+        /*to adjust for different screensizes*/
+        @media (max-width: 600px) {
+        .person {
+        color: pink;
+        }
+        }
+        </style>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', e => {
+            let el = document.querySelector("#world");
+            el.style.color="#"+Math.floor(Math.random()*16777215).toString(16);
+});
+            </script>
+
+
+</head>
+<body>
+    <div id="world">Hello für die eventlistener jetzt zufällige Farbe für jede aktualisierung der Seite</div>
+    <h1>introduction</h1>
+    </body><hr>
+    <p class="person">I am <em>Snargil</em></p>
+    <h1>h1</h1>
+    <p>header1</p>
+    <h2>h2</h2>
+    <p>header2</p>
+    <h3>h3</h3>
+    <p>header3</p>
+    <p><b>i am bold</b></p>
+    <img src="SnargilCompr.jpg" width="400">
+    <img src="MomotaPushups.gif" width="400">
+
+    <!--LISTS-->
+    <ul>shoppinglist <!--dotted-->
+        <li>butter</li>
+        <li>Milch</li>
+        <li>Saft</li>
+    </ul>
+
+    <ol>shoppinglist <!--numbered-->
+        <li>butter</li>
+        <li>Milch</li>
+        <li>Saft</li>
+    </ol>
+
+    <!--HOW TO DO A TABLE-->
+    <table>
+        <tr> <!--table rows-->
+            <th>1</th> <!--table heads-->
+            <th>2</th>
+            <th>drei</th>
+
+         </tr>
+         <tr>
+            <td>reihe</td> <!--table data-->
+            <td>zwei</td>
+         </tr>
+    </table>
+    <!--div assignement-->
+    <div class="space">vier fünf sechs</div>
+</body>
+</html>
